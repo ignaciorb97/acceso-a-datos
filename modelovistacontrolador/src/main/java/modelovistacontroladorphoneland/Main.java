@@ -1,13 +1,13 @@
-package modelovistacontrolador;
+package modelovistacontroladorphoneland;
 
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
-        String dbURL = "jdbc:mysql://localhost/empresa"; // URL de la base de datos
+        String dbURL = "jdbc:mysql://localhost:33306/phoneland";// URL de la base de datos
         String dbUser = "root"; // Usuario de la base de datos
         String dbPassword = ""; // Contraseña del usuario
-  
+
         try {
             ClienteController controller = new ClienteController(dbURL, dbUser, dbPassword); // Crea una instancia del controlador
             controller.mostrarClientes(); // Llama al método del controlador para mostrar los clientes
