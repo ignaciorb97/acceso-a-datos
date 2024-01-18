@@ -16,7 +16,7 @@ public class Main {
 		context.bind(sessionFactory.openSession());
 		try {
 			// Crear objeto fabricante
-			Clientes cliente = new Clientes("Alvaro", "Malaga");
+			Clientes cliente = new Clientes("Ignacio", "Malaga");
 
 			// Obtener la sesión actual
 			Session session = context.currentSession();
